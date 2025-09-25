@@ -266,7 +266,7 @@ export const STEPS = [
 ];
 
 // Backend API URL
-export const API_BASE_URL = "http://localhost:8000";
+export const API_BASE_URL = "https://template-poc-be.onrender.com";
 
 // Streamlined template creation flow constants
 export const TEMPLATE_TYPES = [
