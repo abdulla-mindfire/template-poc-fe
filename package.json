@@ -9,11 +9,11 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.12.2",
     "medium-editor": "^5.23.3",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
     "react-medium-editor": "^1.8.1",
     "react-router-dom": "^7.8.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "4.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
