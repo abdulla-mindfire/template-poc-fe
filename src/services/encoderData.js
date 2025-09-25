@@ -419,7 +419,7 @@ function buildFormData(html, pagesObj) {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded",
             "Accept": "application/json",
-            "Authorization": "Bearer KOYBg23lGEmzGmfQTNxqh9T4QQtCgO8iJH4EbqJw"
+            "Authorization": "Bearer <token>"
           }
         }
       );
