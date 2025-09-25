@@ -115,10 +115,10 @@ function App() {
     
     try {
       // Submit the five classification responses in sequence
-      await conversationAPI.submitResponse(sessionId, 1, data.companyDescription);
-      await conversationAPI.submitResponse(sessionId, 2, data.termsConditions);
-      await conversationAPI.submitResponse(sessionId, 3, data.extraInformation);
-      await conversationAPI.submitResponse(sessionId, 4, data.templateType);
+      await conversationAPI.submitResponse(sessionId, 1, data.templateType);
+      await conversationAPI.submitResponse(sessionId, 2, data.companyDescription);
+      await conversationAPI.submitResponse(sessionId, 3, data.termsConditions);
+      await conversationAPI.submitResponse(sessionId, 4, data.extraInformation);
       const finalResponse = await conversationAPI.submitResponse(sessionId, 5, data.tone);
       
       if (finalResponse.completed) {

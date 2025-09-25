@@ -58,10 +58,10 @@ const ClassificationFlow = ({ onComplete, loading, error, currentStep, setCurren
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {STREAMLINED_FLOW_STEPS[4].name}
+                {STREAMLINED_FLOW_STEPS[1].name}
               </h3>
               <p className="text-gray-600 mb-4">
-                {STREAMLINED_FLOW_STEPS[4].description}
+                {STREAMLINED_FLOW_STEPS[1].description}
               </p>
             </div>
 
@@ -99,10 +99,10 @@ const ClassificationFlow = ({ onComplete, loading, error, currentStep, setCurren
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {STREAMLINED_FLOW_STEPS[1].name}
+                {STREAMLINED_FLOW_STEPS[2].name}
               </h3>
               <p className="text-gray-600 mb-4">
-                {STREAMLINED_FLOW_STEPS[1].description}
+                {STREAMLINED_FLOW_STEPS[2].description}
               </p>
             </div>
             
@@ -113,7 +113,7 @@ const ClassificationFlow = ({ onComplete, loading, error, currentStep, setCurren
               <textarea
                 value={companyDescription}
                 onChange={(e) => setCompanyDescription(e.target.value)}
-                placeholder={STREAMLINED_FLOW_STEPS[1].placeholder}
+                placeholder={STREAMLINED_FLOW_STEPS[2].placeholder}
                 className="w-full h-64 p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                 disabled={loading}
               />
@@ -129,15 +129,15 @@ const ClassificationFlow = ({ onComplete, loading, error, currentStep, setCurren
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {STREAMLINED_FLOW_STEPS[2].name}
+                {STREAMLINED_FLOW_STEPS[3].name}
               </h3>
               <p className="text-gray-600 mb-4">
-                {STREAMLINED_FLOW_STEPS[2].description}
+                {STREAMLINED_FLOW_STEPS[3].description}
               </p>
             </div>
 
             <div className="space-y-4">
-              {STREAMLINED_FLOW_STEPS[2].options.map((option) => (
+              {STREAMLINED_FLOW_STEPS[3].options.map((option) => (
                 <div key={option.id} className="border border-gray-300 rounded-lg p-4">
                   <label className="flex items-center mb-2">
                     <input
@@ -175,10 +175,10 @@ const ClassificationFlow = ({ onComplete, loading, error, currentStep, setCurren
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                {STREAMLINED_FLOW_STEPS[3].name}
+                {STREAMLINED_FLOW_STEPS[4].name}
               </h3>
               <p className="text-gray-600 mb-4">
-                {STREAMLINED_FLOW_STEPS[3].description}
+                {STREAMLINED_FLOW_STEPS[4].description}
               </p>
             </div>
             
@@ -189,7 +189,7 @@ const ClassificationFlow = ({ onComplete, loading, error, currentStep, setCurren
               <textarea
                 value={extraInformation}
                 onChange={(e) => setExtraInformation(e.target.value)}
-                placeholder={STREAMLINED_FLOW_STEPS[3].placeholder}
+                placeholder={STREAMLINED_FLOW_STEPS[4].placeholder}
                 className="w-full h-64 p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
                 disabled={loading}
               />

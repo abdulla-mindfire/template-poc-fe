@@ -266,7 +266,7 @@ export const STEPS = [
 ];
 
 // Backend API URL
-export const API_BASE_URL = "https://template-poc-be.onrender.com";
+export const API_BASE_URL = "http://localhost:8000" // "https://template-poc-be.onrender.com";
 
 // Streamlined template creation flow constants
 export const TEMPLATE_TYPES = [
@@ -291,12 +291,18 @@ export const DOCUMENT_TONES = [
 // Streamlined 5-step flow: Company → Terms → Extra Info → Type → Tone → Generate Templates
 export const STREAMLINED_FLOW_STEPS = {
   1: {
+    name: "Template Type",
+    description: "Select the type of document template you want to create",
+    type: "selection",
+    options: TEMPLATE_TYPES
+  },
+  2: {
     name: "Company Description",
     description: "Tell us about your company - who you are and what you do",
     type: "textarea",
     placeholder: "Describe your company, services, experience, values, and what makes you unique..."
   },
-  2: {
+  3: {
     name: "Terms & Conditions",
     description: "Do you have specific Terms & Conditions or Warranty language that should be included?",
     type: "terms_conditions",
@@ -305,17 +311,11 @@ export const STREAMLINED_FLOW_STEPS = {
       {id: "warranty", label: "Warranty Information", placeholder: "Enter your warranty details..."}
     ]
   },
-  3: {
+  4: {
     name: "Extra Information",
     description: "Paste all your project information, requirements, pricing, timeline, and any other relevant information",
     type: "textarea",
     placeholder: "Paste all your project details, pricing, requirements, timeline, materials, etc. here..."
-  },
-  4: {
-    name: "Template Type",
-    description: "Select the type of document template you want to create",
-    type: "selection",
-    options: TEMPLATE_TYPES
   },
   5: {
     name: "Document Tone",
